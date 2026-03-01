@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Progress</title>
+</head>
+<body>
+    <h1>Daily Progress</h1>
+
+    {% if med and med.taken_today %}
+        <h2>✅ Medicine Taken Today</h2>
+    {% else %}
+        <h2>❌ Medicine Not Taken Today</h2>
+    {% endif %}
+
+    <a href="/">Back to Home</a>
+</body>
+</html>
